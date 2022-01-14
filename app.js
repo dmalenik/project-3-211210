@@ -442,7 +442,7 @@ let showBalance = () => {
  */
 // check the addEventListener for the incomeButton out
 document.incomeForm.incomeButton.addEventListener("click", function() {return submitOnClick();});
-console.log(document.incomeForm.incomeButton.addEventListener("click", submitOnClick()););
+console.log(document.incomeForm.incomeButton.addEventListener("click", function() {console.log(submitOnClick())}));
 // function to execute while click on the submit button
 let submitOnClick = () => {
   var activeElement = document.activeElement;
